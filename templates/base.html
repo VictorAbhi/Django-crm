@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django crm</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+<body style="margin: 30px">
+    <div class="max-w-4xl mx-auto">
+        {% include 'leads/navbar.html' %}
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>
